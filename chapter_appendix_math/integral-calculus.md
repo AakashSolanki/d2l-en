@@ -1,4 +1,4 @@
-## Integral Calculus
+# Integral Calculus
 :label:`sec_integral_calculus`
 
 Differentiation only makes up half of the content of a traditional calculus education.  The other pillar, integration, starts out seeming a rather disjoint question, "What is the area underneath this curve?"  While seemingly unrelated, integration is tightly intertwined with the differentiation via what is known as the *fundamental theorem of calculus*.  
@@ -25,7 +25,7 @@ d2l.plt.fill_between(x.tolist(),f.tolist())
 d2l.plt.show()
 ```
 
-In most cases, this area will be infinite or undefined (consider the area under $f(x) = x^{2}$), so people will often talk about the area between a pair of ends, say $a$ and $b$.  
+In most cases, this area will be infinite or undefined (consider the area under $f(x) = x^{2}$), so people will often talk about the area between a pair of ends, say $a$ and $b$.
 
 ```{.python .input}
 x = np.arange(-2,2,0.01)
@@ -379,6 +379,6 @@ We will meet this integral again when we study continuous random variables in th
 * Integrals in higher dimensions can be computed by iterating single variable integrals.
 
 ## Exercises
-1. What is $\int_1^2 \frac{1}{x} ;dx$?
+1. What is $\int_1^2 \frac{1}{x} \;dx$?
 2. Use the change of variables formula to integrate $\int_0^{\sqrt{\pi}}x\sin(x^2)\;dx$.
 3. What is $\int_{[0,1]^2} xy \;dx\;dy$?

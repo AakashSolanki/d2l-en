@@ -1,4 +1,4 @@
-# Foundational Linear Algebra
+# Linear Algebra
 :label:`appendix_linear_algebra`
 
 In :numref:`sec_scalar-tensor`, we saw the fundamentals of linear algebra and how to use it to store and transform data.  Indeed, it is safe to say that linear algebra is one of the key mathematical pillars of modern deep learning.  However the theory goes much deeper than we have seen, and in this section we will dive into the some of the key geometric notions associated with linear algebra, see additional interpretations of many of the operations we have met before, and meet a few additional concepts like eigenvalues and eigenvectors.
@@ -169,6 +169,7 @@ ave_0 = np.mean(X_train_0,axis=0)
 ave_1 = np.mean(X_train_1,axis=0)
 print("Computed Averages")
 ```
+
 
 ```{.python .input}
 # Plot average t-shirt
@@ -390,6 +391,7 @@ Let's check this quickly with some example code.
 np.linalg.det(np.array[[1,-1],[2,3]])
 ```
 
+
 The eagle-eyed amongst us will notice that this expression can be zero or even negative.  For the negative term, this is a matter of convention taken generally in mathematics: if the matrix flips the figure, we say the area is negated.  Let us see now that when the determinant is zero, we learn more.
 
 Let us consider
@@ -578,7 +580,7 @@ $$
 \end{aligned}
 $$
 
-Performing the numerical computation shows that the eigenvalues are approximately $0.99, 2.97, 4.95, 9.08$, all comfortably inside the ranges provided.  
+Performing the numerical computation shows that the eigenvalues are approximately $0.99, 2.97, 4.95, 9.08$, all comfortably inside the ranges provided.
 
 ```{.python .input}
 A = np.array([[1.0, 0.1, 0.1, 0.1],
@@ -696,6 +698,7 @@ for i in range(1,100):
     
 d2l.plot(np.arange(1,100),norm_ratio_list,'Iteration','Ratio')
 ```
+
 
 ### Conclusions
 
@@ -845,5 +848,3 @@ A = \begin{bmatrix}
 $$
 
 10. How can you write $\mathrm{tr}(\mathbf{A}^4)$ in Einstein notation?
-
-
